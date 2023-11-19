@@ -1,0 +1,375 @@
+/* 
+font family:system-ui 
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+:root{
+    --main-color:#0d6efd;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*  start style for section one   */
+header{
+    background-image: url(../img/hero-bg.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+    background-attachment: fixed;
+    /* background-repeat: no-repeat; */
+}
+.title{
+    transform: translatey(20px);
+    /* transform: translatey(50px);
+
+    */
+    
+}
+ .typing::after{
+    content: '';
+    animation: typing 8s infinite;
+    animation-play-state: inherit; 
+}
+@keyframes typing{
+    0%{content: 'f|';}
+    3%{content: 'fr|';}
+    6%{content: 'fro|';}
+    9%{content: 'fron|';}
+    11%{content: 'front|';}
+    14%{content: 'front e|';}
+    17%{content: 'front en|';}
+    20%{content: 'front end|';}
+    23%{content: 'f|';}
+    26%{content: 'fr|';}
+    29%{content: 'fro|';}
+    32%{content: 'fron|';}
+    35%{content: 'front|';}
+    38%{content: 'front e|';}
+    41%{content: 'front en|';}
+    44%{content: 'front end|';}
+    
+    47%{content: 'd|';}
+    50%{content: 'de|';}
+    53%{content: 'dev|';}
+    56%{content: 'deve|';}
+    59%{content: 'devel|';}
+    61%{content: 'develo|';}
+    64%{content: 'develop|';}
+    67%{content: 'developer|';}
+    70%{content: 'develop|';}
+    73%{content: 'develo|';}
+    76%{content: 'devel|';}
+    79%{content: 'deve|';}
+    82%{content: 'dev|';}
+    85%{content: 'de|';}
+    88%{content: 'd|';}
+    }
+    /* @keyframes typing {
+        
+        0%{
+            content: 'D |';
+        }
+        7%{
+            content: 'De |';
+        }
+        14%{
+            content: 'Des |';
+        }
+        21%{
+            content: 'Desi |';
+        }
+        28%{
+            content: 'Desig |';
+        }
+        35%{
+            content: 'Design |';
+        }
+        42%{
+            content: 'Designe |';
+        }
+        49%{
+            content: 'Designer |';
+        }
+        56%{
+            content: 'Designe |';
+        }
+        63%{
+            content: 'Design |';
+        }
+        70%{
+            content: 'Desig |';
+        }
+        77%{
+            content: 'Desi |';
+        }
+        84%{
+            content: 'Des |';
+        }
+        91%{
+            content: 'De |';
+        }
+        98%{
+            content: 'D |';
+        }
+        100%{
+            content: ' |';
+        }
+    
+        
+    } */
+/*  end style for section one   */
+/*  start style for section two   */
+#About .container .row .info .info-img img{
+    width: 200px;
+}
+#About .container .row .about-me .line{
+    position: relative;
+}
+#About .container .row .about-me .line::after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    width:120px;
+    height: 3px;
+    top:100%;
+    left:0;
+}
+/*  end style for section two   */
+/*  start style for section three   */
+#SERVICES .container .row .item{
+    
+}
+#SERVICES .container .row .item .decor{
+    border:5px solid var(--main-color);
+    transition: all 2s;
+}
+#SERVICES .container .row .item .border-op:hover{
+    opacity: 0.5px;
+}
+#SERVICES .container .row .item:hover .decor {
+ background-color: var(--main-color);
+}
+#SERVICES .container .title p{
+    position: relative;
+}
+#SERVICES .container .title p::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    top:100%;
+    left:45%;
+    margin: 10px 0;
+}
+#SERVICES .container .title .row .items .item span{
+    transition: all 2s;
+}
+#SERVICES .container .title .row .items .item :hover span{
+    opacity:#0d6dfd61;
+}
+/*  end style for section three   */
+/*  start style for section four   */
+#feedback{
+    height: 600px;
+    background-color: tomato;
+    position: relative;
+    overflow: hidden;
+}
+#feedback .img-bg{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img/post-3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+}
+#feedback .row{
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: #0d6dfd9d;
+}
+#feedback .row .items i{
+    width:4rem;
+    height: 4rem;
+}
+/*  end style for section four   */
+/*  start style for section five   */
+#WORK .container .row .team .team-info h6 span{
+    color:var(--main-color);
+}
+#WORK .container .row .team .team-icon i{
+    color: var(--main-color);
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    padding: 20px;
+}
+#WORK .container .row .team a img{
+    transition: all 2s;
+}
+#WORK .container .row .team a:hover img {
+    transform: scale(1.1);
+    
+}
+#WORK .container .title p{
+    position: relative;
+}
+#WORK .container .title p::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    top:100%;
+    left:45%;
+    margin: 10px 0;
+}
+/*  end style for section five    */
+/*  start style for section six   */
+#carasol .container-fluid{
+    height: 500px;
+}
+#carasol .container-fluid .bg-image{
+    background-image: url(../img/post-1.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+#carasol .container-fluid .carassol{
+    background-color: #0d6dfd8d;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+/* .carousel-inner .carousel-item img{
+    width:20%;
+    background-color: tomato;
+} */
+.carousel-inner {
+    margin-top: 50px;
+    text-align: center;
+    width:100%;
+    height: 60vh;
+    
+  }
+.carousel-inner img{
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.carousel-caption {
+    transform: translateY(100%);
+  }
+/*  end style for section six    */
+/*  start style for section seven   */
+#BLOG .container .title p{
+    position: relative;
+}
+#BLOG .container .title p::after{
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    top:100%;
+    left:45%;
+    margin: 10px 0;
+}
+/* #BLOG .container .card .card-body .yyyy a{
+    text-decoration: none;
+    color: black;
+}
+#BLOG .container .card .card-body .yyyy a:hover{
+   color :var(--main-color)
+}
+.tttt:hover{
+    color: var(--main-color);
+} */
+#BLOG .container .row .card .card-body a{
+    color: black;
+    text-decoration: none;
+    transition: all 2s;
+}
+#BLOG .container .row .card .card-body a:hover{
+    color: var(--main-color);
+}
+#BLOG .container .row .card .btu button{
+    background-color: var(--main-color);
+    padding: 5px 10px;
+}
+/*  end style for section seven    */
+/*  start style for section eight   */
+#CONTACT{
+    height: 100vh;
+    margin-top: 50px;
+}
+#CONTACT .container-fluid .img-bg{
+    background-image: url(../img/post-1.jpg);
+    background-size: 100% 100%;
+    background-position: center center;
+     background-attachment: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+#CONTACT .container-fluid .contect{
+background-color:#0d6dfd8b;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+#CONTACT .container-fluid .contect .container .row .forme .styl::after{
+    content: "";
+    position: absolute;
+    width:100px;
+    height: 3px;
+    background-color:var(--main-color);
+    top:100%;
+    left:0;
+}
+#CONTACT .container-fluid .contect .container .row .madia .styl::after{
+    content: "";
+    position: absolute;
+    width:100px;
+    height: 3px;
+    background-color:var(--main-color);
+    top:100%;
+    left:0;
+}
+#CONTACT .container-fluid .contect .container .row .madia .fa-solid{
+    color: var(--main-color);
+}
+/* #CONTACT .container-fluid .contect .container .row .madia .fa-thin{
+    color: var(--main-color);
+    transform: translateY(-10px);
+}
+ */
+ #CONTACT .container-fluid .contect .container .row .madia .icon i:hover {
+    background-color: var(--main-color);
+ }
+/*  end style for section eight    */
+/*  start style for section nine  */
+#the-end .end{
+    background-color: var(--main-color);
+}
+/*  end style for section nine    */
